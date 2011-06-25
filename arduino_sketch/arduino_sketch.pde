@@ -1,9 +1,12 @@
 /*
-  Blink
-  Turns on an LED on for one second, then off for one second, repeatedly.
- 
-  This example code is in the public domain.
- */
+  The Arduino Uno program which reads data from Serial
+  interface (USB) and sets the output pins 8, 9, and 10
+  accordingly.
+
+  The data from USB is read byte by byte and every such
+  byte is analyzed and the three least significant bits
+  are considered as the light control bits.
+*/
  
 int green = 8;
 int yellow = 9;
