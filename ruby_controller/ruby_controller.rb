@@ -11,7 +11,7 @@ if ARGV.length != 5
   puts "  ./ruby_controller.rb port job hudson_host user password"
   puts
   puts "Example:"
-  puts "  ./ruby_controller.rb /dev/ttyACM0 hudson.company.com project-trunk"
+  puts "  ./ruby_controller.rb /dev/ttyACM0 project-trunk hudson.company.com"
   puts "                       johndoe 123456"
   exit 1
 end
