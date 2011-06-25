@@ -1,4 +1,8 @@
 #!/usr/bin/env ruby
+#
+# The controller which fetches status of Hudson job every
+# 5 seconds and updates the traffic lights accordingly.
+#
 
 require "serialport"
 require "json"
