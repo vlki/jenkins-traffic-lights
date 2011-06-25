@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# The controller which fetches status of Hudson job every
+# The controller which fetches status of Jenkins job every
 # 5 seconds and updates the traffic lights accordingly.
 #
 
@@ -12,10 +12,10 @@ if ARGV.length != 5
   puts "error: five arguments must be provided"
   puts
   puts "Usage:"
-  puts "  ./ruby_controller.rb port job hudson_host user password"
+  puts "  ./ruby_controller.rb port job jenkins_host user password"
   puts
   puts "Example:"
-  puts "  ./ruby_controller.rb /dev/ttyACM0 project-trunk hudson.company.com"
+  puts "  ./ruby_controller.rb /dev/ttyACM0 project-trunk jenkins.company.com"
   puts "                       johndoe 123456"
   exit 1
 end
