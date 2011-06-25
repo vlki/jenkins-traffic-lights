@@ -78,11 +78,17 @@ while true
   end
 
   # resolve state
-  state = 1 # green
+  state = 0 # nothing
 
   if tracked_job['color'] =~ /anime/
     state = 7 # all colors
-   end
+  elsif tracked_job['color'] == 'red'
+    state = 4 # red
+  elsif tracked_job['color'] == 'yellow'
+    state = 2 # yellow
+  elsif tracked_job['color'] == 'blue'
+    state = 1 # green
+  end
 
   sp.write(state)
   
